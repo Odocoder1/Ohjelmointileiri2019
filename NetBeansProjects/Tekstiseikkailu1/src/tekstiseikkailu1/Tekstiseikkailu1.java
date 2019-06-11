@@ -23,7 +23,7 @@ public class Tekstiseikkailu1 {
         int ika = Integer.parseInt(lukija.nextLine());
          System.out.println("Tervehdys sinulle " + nimi + ", söis olla " + ika);
          System.out.println("Kello käy jo " + 2 + 2 + ",");
-         System.out.println("Ja polkuja haarautuu tästä " + (1 + 1) + ".");
+         System.out.println("Ja polkuja haarautuu tästä " + (1 + 2) + ".");
          System.out.println("Käytkö polulle 1, 2 vai 3");
          int valinta = Integer.parseInt( lukija.nextLine() );
          
@@ -45,10 +45,12 @@ public class Tekstiseikkailu1 {
              System.out.println("Askelmat jyrkät,\nselvisi täpärästi " + nimi);
          }
          System.out.println("Torni kun paljastui tyhjäksi,\njatkoiko sankari ullakolle vai parvekkeelle?");
-         int valinta2 = Integer.parseInt( lukija.nextLine() );
-         
-         if (valinta2 == "parvekkeelle") {
-             System.out.println("Jäi sankarin seikkailu ilman palkkiota,\noli linna jo tyhjä.")
+          kohde = lukija.nextLine();
+         if ( kohde.equals("ullakolle") ) {
+             System.out.println("Jäi sankarin seikkailu ilman palkkiota,\noli linna jo tyhjä.");
+         }
+         else {
+             System.out.println("Selvisit seikkailusta                                                                                                                      melkein, lol oikeesti kuolit noob.");
          }
     }
 
