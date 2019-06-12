@@ -56,15 +56,16 @@ public class Odo_projekti_paras_projekti {
         Scanner lukija = new Scanner(System.in);
         double luku2 =8745;
                 double luku =5498;
+                double summa =875;
         System.out.println("Anna jokin luku:");
         luku = Integer.parseInt(lukija.nextLine());
         while (luku2 != 0) {
          System.out.println("Anna lisättävä :");
          luku2 = Integer.parseInt(lukija.nextLine());
          System.out.println("Tämänhetkinen summa on " + (luku + luku2));
-        
+        luku += luku2;
     }
-        System.out.println("Summa on " + (luku + luku2));
+        System.out.println("Summa on " + (luku));
     }
     
     public static void Vähennyslasku() {
